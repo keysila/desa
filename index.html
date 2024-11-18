@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="ptm.png" alt="Logo Desa" class="logo">
+            <h1>Website Desa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><button onclick="showPage('home')">Home</button></li>
+                <li><button onclick="showPage('peta')">Peta</button></li>
+                <li><button onclick="showPage('about')">About</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page">
+            <h2>Selamat Datang di Desa Patimuan</h2>
+            <p>Desa Patimuan, yang terletak di Kecamatan Patimuan, Kabupaten Cilacap, merupakan desa yang asri dengan masyarakat yang ramah dan budaya gotong royong yang kuat.</p>
+            <p>Desa ini terdiri dari <b>14 RW</b>, <b>60 RT</b>, dan <b>5 dusun</b>, yaitu:</p>
+            <ul>
+                <li>Dusun Patimuan</li>
+                <li>Dusun Wadasjontor</li>
+                <li>Dusun Nusawuluh</li>
+                <li>Dusun Kalenpring</li>
+                <li>Dusun Stap Sanga</li>
+            </ul>
+            <p>Selain menjadi pusat kegiatan pertanian, desa ini juga memiliki potensi ekowisata dan budaya yang khas. Dengan keindahan alam yang memukau serta kehidupan sosial yang harmonis, Desa Patimuan terus berupaya menjadi desa yang mandiri, berdaya saing, dan lestari.</p>
+            <img src="desa.jpeg" alt="Pemandangan Desa Patimuan" class="featured-image">
+        </section>
+
+        <!-- Peta Section -->
+        <section id="peta" class="page" style="display: none;">
+            <h2>Peta Desa</h2>
+            <iframe 
+                src="https://pettaa.netlify.app/" 
+                width="100%" 
+                height="400px" 
+                style="border: 0;"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page" style="display: none;">
+            <h2>Tentang Desa</h2>
+            <h3>Visi</h3>
+            <p>Menjadi desa yang mandiri, sejahtera, dan berkelanjutan dengan semangat gotong royong.</p>
+            <h3>Misi</h3>
+            <ul>
+                <li>Meningkatkan kesejahteraan masyarakat melalui pemberdayaan ekonomi lokal.</li>
+                <li>Melestarikan budaya dan lingkungan.</li>
+                <li>Mengembangkan infrastruktur dan pelayanan publik.</li>
+            </ul>
+            <h3>Struktur Organisasi</h3>
+            <ul>
+                <li>Kepala Desa: Muttaqin</li>
+                <li>Sekretaris Desa: Dian</li>
+                <li>Bendahara: Endar</li>
+                <li>Ketua RT/RW: Beragam perwakilan masyarakat.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Desa Kami. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
